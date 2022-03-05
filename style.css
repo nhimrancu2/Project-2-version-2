@@ -65,7 +65,7 @@
 ==== Hero Area ====
 ****/
 #hero {
-  background-image: url(/img/bg.jpg);
+  background-image: url(bg.jpg);
   background-size: 100%;
   background-position: center;
   height: 400px;
