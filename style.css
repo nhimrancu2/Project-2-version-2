@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+  background-color: #d3d3d36b;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*=== Header ===
+=== Section ====*/
+
+.top_logo_area {
+  overflow: hidden;
+  padding: 20px;
+}
+.logo {
+  width: 200px;
+  float: left;
+  margin-top: 30px;
+}
+.logo a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.address_area {
+  float: right;
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #000;
+}
+.address_area a {
+  display: block;
+  text-decoration: none;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+/**** 
+==== Menu ====
+****/
+.menu_area {
+  background-color: #000;
+  list-style-type: none;
+}
+.menu_area ul li {
+  display: inline;
+  border-right: 1px dotted #fff;
+}
+.menu_area ul li:last-child {
+  border-right: none;
+}
+.menu_area ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+/**** 
+==== Hero Area ====
+****/
+#hero {
+  background-image: url(/img/bg.jpg);
+  background-size: 100%;
+  background-position: center;
+  height: 400px;
+  padding: 5%;
+  box-sizing: border-box;
+}
+.hero_content {
+  background-color: #00000078;
+  width: 65%;
+  margin: 0 auto;
+  padding: 5%;
+}
+.hero_content h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 75px;
+}
+.hero_content p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+}
+.hero_content button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.5s;
+}
+/**** 
+==== Main area + sidebar ====
+****/
+#content {
+  overflow: hidden;
+  padding: 25px 0px;
+}
+aside.sidebar {
+  width: 200px;
+  float: left;
+}
+.content_area {
+  width: 730px;
+  float: left;
+  margin-left: 30px;
+}
+.sidebar_menu li {
+}
+.sidebar_menu a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+.single_content {
+  padding: 30px 10px;
+  background: #000;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.single_content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.single_content p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+/**** 
+==== Footer ====
+****/
+.footer_top {
+  overflow: hidden;
+  background: #000000ab;
+  color: #fff;
+  padding: 25px;
+}
+.single_footer_widget {
+  width: 31.3%;
+  float: left;
+  padding: 0 1%;
+}
+.single_footer_widget h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  position: relative;
+}
+.single_footer_widget p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.footer_bottom {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+}
+.single_footer_widget h2::before {
+  position: absolute;
+  content: "";
+  right: 100px;
+  bottom: 0;
+  width: 35%;
+  border-bottom: 8px solid;
+  margin-bottom: -3px;
+}
+
+.single_footer_widget h2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  width: 35%;
+  border-bottom: 2px solid;
+  margin-bottom: 0px;
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 760px;
+  }
+  .hero_content h2 {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .hero_content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .hero_content button {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+  aside.sidebar {
+    width: 170px;
+  }
+  .content_area {
+    width: 560px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 310px;
+  }
+  .logo {
+    width: 300px;
+    float: none;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .address_area {
+    float: none;
+    width: 220px;
+    margin-top: 20px;
+  }
+  .menu_area ul li a {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  .hero_content h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .hero_content {
+    width: 75%;
+  }
+  aside.sidebar {
+    width: 310px;
+    margin-bottom: 10px;
+  }
+  .content_area {
+    width: 310px;
+    margin: 0;
+  }
+  .single_footer_widget {
+    width: 95%;
+    float: none;
+    padding: 0 1%;
+    margin-bottom: 10px;
+  }
+}
